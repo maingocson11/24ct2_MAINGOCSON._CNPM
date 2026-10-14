@@ -1,0 +1,1 @@
+{% if page.has_other_pages %}<nav class="pagination">{% if page.has_previous %}<a href="?q={{ request.GET.q|urlencode }}&page={{ page.previous_page_number }}">← Trước</a>{% endif %}<span>{{ page.number }} / {{ page.paginator.num_pages }}</span>{% if page.has_next %}<a href="?q={{ request.GET.q|urlencode }}&page={{ page.next_page_number }}">Sau →</a>{% endif %}</nav>{% endif %}
